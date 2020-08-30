@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.UserDetailsActivity">
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/app_color_voilet"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image_view"
+                android:background="@mipmap/buzz_logo_240"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"
+                android:layout_centerHorizontal="true"
+                app:border_color="@color/white" app:border_width="1dp"/>
+
+            <ImageView
+                android:id="@+id/settings_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/setting_image"
+                android:paddingRight="4dp"
+                />
+            <ImageView android:id="@+id/chat_backarrow" android:background="@mipmap/ic_back_arrow" android:padding="20dp" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="5dp" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/profile" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="5dp" android:text="Profile" android:layout_toRightOf="@+id/chat_backarrow" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <ScrollView android:scrollbars="vertical"
+            android:id="@+id/relLAy"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/User_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="User Name"/>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@drawable/toggle_bacground_shape" android:layout_width="120dp" android:layout_height="25dp">
+                        <LinearLayout android:background="@drawable/toggle_bacground_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <Button android:textColor="@android:color/black" android:id="@+id/button_public" android:background="@drawable/signin_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="2dp" android:text="Public" android:layout_weight="1" android:layout_centerVertical="true" android:textAllCaps="false"/>
+                            <Button android:textColor="@android:color/white" android:id="@+id/button_private" android:background="@drawable/signin_button_voilet" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="2dp" android:text="Private" android:layout_weight="1" android:layout_centerVertical="true" android:textAllCaps="false"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:background="#fe8080" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_below="@+id/llEmail" android:layout_centerHorizontal="true"/>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/profile_section_one_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:background="@drawable/signin_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="My Profile"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView android:background="@mipmap/ic_user"
+                                android:backgroundTint="@color/black" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true"/>
+
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Buzz ID" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <TextView android:textColor="@color/black" android:id="@+id/user_profile_secret_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Annie69" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/black" android:layout_width="20dp" android:layout_height="20dp" android:text="@string/at" android:layout_alignParentLeft="true"
+                                android:gravity="center"/>
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Email ID" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <TextView android:textColor="@color/black" android:id="@+id/user_profile_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Annie69@gmail.com" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView android:layout_gravity="center"  android:backgroundTint="@color/black" android:background="@mipmap/ic_phone" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true"/>
+
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Mobile No" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <TextView android:textColor="@color/black" android:id="@+id/user_profile_Mobileno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="next" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView android:layout_gravity="center"
+                                android:backgroundTint="@color/black" android:background="@mipmap/ic_birthday" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true"/>
+
+                            <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Birthday" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/et_date_of_birth" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00-00-0000" android:editable="false"/>
+                            <ImageView android:id="@+id/image_view_select_date" android:background="@mipmap/ic_calender" android:layout_width="20dp" android:layout_height="20dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:backgroundTint="@color/black" android:textColor="@color/black" android:layout_gravity="center" android:background="@mipmap/ic_terms" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true"/>
+
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Security Code" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <TextView android:textColor="@color/black" android:id="@+id/user_profile_security_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="next" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView android:textColor="@color/black"
+                                android:backgroundTint="@color/black" android:layout_gravity="center" android:background="@mipmap/ic_gender" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true"/>
+
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Gender" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <TextView android:textColor="@color/black" android:id="@+id/tv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="next" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView
+
+                                android:layout_width="11dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/black"
+                                android:background="@mipmap/ic_status" />
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Marital Status" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <TextView android:textColor="@color/black" android:id="@+id/status_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="next" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                    <RelativeLayout android:id="@+id/relative_anniversary" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                            <ImageView android:layout_gravity="center"
+                                android:backgroundTint="@color/black" android:background="@mipmap/ic_anniversary" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentLeft="true"/>
+
+                            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Anniversary" android:layout_alignParentLeft="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <EditText
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:id="@+id/et_anniversary"
+                                android:background="@null"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="00-00-0000"
+                                android:editable="false"/>
+                            <ImageView android:id="@+id/iv_anniversary" android:background="@mipmap/ic_calender" android:layout_width="20dp" android:layout_height="20dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/profile_section_one_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:background="@drawable/signin_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:backgroundTint="@color/black" android:background="@mipmap/ic_work_for" android:layout_width="20dp" android:layout_height="20dp"/>
+
+                                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Work For" android:layout_alignParentLeft="true"/>
+                                </LinearLayout>
+                                <TextView android:textColor="@color/black" android:layout_gravity="right" android:id="@+id/work_for_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Work For"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:backgroundTint="@color/black" android:background="@mipmap/ic_residence" android:layout_width="20dp" android:layout_height="20dp"/>
+
+                                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Residence" android:layout_alignParentLeft="true"/>
+                            </LinearLayout>
+                            <TextView android:textColor="@color/black" android:id="@+id/tv_recidence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delhi, India" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:backgroundTint="@color/black" android:background="@mipmap/ic_interest" android:layout_width="20dp" android:layout_height="20dp"/>
+
+                                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Interests" android:layout_alignParentLeft="true"/>
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_all_interests" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/profile_section_one_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black" android:background="@drawable/signin_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_settings"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <RelativeLayout android:id="@+id/account_status" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:backgroundTint="@color/black" android:background="@mipmap/ic_account_status" android:layout_width="20dp" android:layout_height="20dp"/>
+
+                                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Account Status" android:layout_alignParentLeft="true"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:background="@mipmap/ic_notifiaction" android:layout_width="20dp" android:layout_height="20dp"/>
+                                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Notifications" android:layout_alignParentLeft="true"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:layout_gravity="center" android:background="#cccccc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                          <RelativeLayout android:id="@+id/relative_change_password" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:backgroundTint="@color/black" android:background="@mipmap/ic_terms" android:layout_width="20dp" android:layout_height="20dp"/>
+
+                                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Change Passkey" android:layout_alignParentLeft="true"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:backgroundTint="@color/black" android:background="@mipmap/ic_delete" android:layout_width="20dp" android:layout_height="20dp"/>
+
+                                <TextView android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/delete_myaccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Delete my Account" android:layout_alignParentLeft="true"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:layout_gravity="center" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                          </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progress"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..Please Wait!"
+            android:textColor="@color/black"
+            android:id="@+id/tv_progress"
+            />
+        <ProgressBar
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+
+
+            android:visibility="visible"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

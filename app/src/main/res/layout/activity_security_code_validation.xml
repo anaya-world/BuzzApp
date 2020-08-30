@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/background" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:background="@mipmap/buzzlogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:layout_marginTop="35dp" android:layout_marginBottom="10dp"/>
+        <TextView android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/tv_verify"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Verify Your Security Code"/>
+        <View android:id="@+id/UnderLine"
+            android:background="#fe8080"
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/tv_verify"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical"
+                android:layout_marginTop="33dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/pass_key" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Select your Security code" android:layout_centerVertical="true"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/linear_xx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/pass_key">
+                    <LinearLayout android:background="@drawable/signin_shape"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp">
+                        <Spinner android:id="@+id/alphabets_spinner_forgorpassword"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:dropDownWidth="60dp"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/signin_shape"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp">
+                        <Spinner
+                            android:id="@+id/alphabets_spinner_numeric_code"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+
+                            android:layout_marginLeft="5dp"
+
+                            android:dropDownWidth="60dp" android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+
+                    <!--<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp">-->
+                    <!--<TextView android:textSize="15sp" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:id="@+id/pass_key" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter your Security code" android:layout_centerVertical="true"/>-->
+                    <!--<LinearLayout android:layout_gravity="center" android:id="@+id/linear_xx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/pass_key">-->
+                    <!--<Spinner-->
+                    <!--android:id="@+id/alphabets_spinner_forgorpassword"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:dropDownWidth="50dp"-->
+                    <!--android:spinnerMode="dropdown"/>-->
+                    <!--<Spinner android:id="@+id/alphabets_spinner_numeric_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>-->
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+                <Button
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/button_validate_OTP" android:background="@drawable/signin_shape" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="60dp" android:layout_marginTop="23dp" android:layout_marginRight="60dp" android:text="Verify" android:layout_centerVertical="true" android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

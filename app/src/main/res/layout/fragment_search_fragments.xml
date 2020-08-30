@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/tab_col"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TextView
+                android:textColor="@color/tab_black"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find new buzzers and stay connected"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center"
+            android:id="@+id/search_tabs"
+            android:background="@drawable/toggle_bacground_shape"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="60dp">
+            <LinearLayout
+                android:background="@drawable/toggle_bacground_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/sign_in_page_button"
+                    android:background="@drawable/signin_button"
+                    android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="2dp" android:text="Search" android:layout_weight="1" android:layout_centerVertical="true" android:textAllCaps="false"/>
+                <Button android:textStyle="bold"
+                    android:textColor="@color/color_white"
+                    android:id="@+id/sign_up_button"
+                    android:background="@drawable/signin_button_voilet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:text="Search +"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_farme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

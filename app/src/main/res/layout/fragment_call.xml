@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/searchlayout"
+        android:background="@color/app_color_voilet"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_search" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/search_white" android:layout_alignTop="@+id/et_search" android:layout_alignRight="@+id/et_search" android:layout_alignBottom="@+id/et_search"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nolist"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Press on + icon and make call with you friends."
+            ></TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/call_history_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_below="@+id/searchlayout"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/call_userlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:tint="@color/black" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="@color/tab_col" app:srcCompat="@drawable/ic_add_white_24dp" app:useCompatPadding="true"/>
+</RelativeLayout>

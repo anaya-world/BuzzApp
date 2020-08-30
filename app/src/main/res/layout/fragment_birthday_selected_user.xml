@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    tools:context=".Fragments.BirthdaySelectedUser">
+
+    <RelativeLayout android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp" android:layout_weight="0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/profile_img"
+            android:id="@+id/cirimageviewprofile"/>
+        <ImageView android:id="@+id/image_user_list_blocked" android:background="@drawable/icon_block_38_dp" android:visibility="gone" android:layout_width="38dp" android:layout_height="38dp"/>
+    </RelativeLayout>
+    <TextView android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="12"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text_selectable_user_list_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_message" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/message_icon"/>
+
+</LinearLayout>

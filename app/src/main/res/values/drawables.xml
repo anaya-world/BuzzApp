@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_menu_gallery">@android:drawable/ic_menu_gallery</drawable>
+    <drawable name="ic_menu_share">@android:drawable/ic_menu_share</drawable>
+    <drawable name="ic_menu_find">@drawable/ic_search_findfrnd</drawable>
+    <drawable name="ic_menu_dash">@drawable/ic_homehome_24dp</drawable>
+
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+</resources>

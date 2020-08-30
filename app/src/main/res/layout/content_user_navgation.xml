@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:layout_collapseMode="pin"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+    >
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tabs"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       app:layout_collapseMode="pin"
+       android:layout_alignParentLeft="true"
+       app:tabBackground="@color/tab_col"
+       app:tabGravity="fill"
+       app:tabIndicatorColor="@color/app_color_voilet"
+       app:tabPaddingEnd="-1dp"
+       android:fitsSystemWindows="true"
+       app:tabPaddingStart="-1dp"
+       app:tabSelectedTextColor="@color/app_color_voilet"
+       app:tabTextAppearance="@style/MyCustomTextAppearance"
+       app:tabTextColor="@color/black"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_collapseMode="pin"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

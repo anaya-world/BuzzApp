@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@mipmap/ic_user" android:id="@+id/nav_profile" android:title="Profile" />
+        <item android:icon="@drawable/ic_menu_dash" android:id="@+id/nav_dashboard" android:title="Dashboard" />
+        <item android:icon="@drawable/ic_post" android:id="@+id/nav_posts" android:title="Posts" />
+        <item android:icon="@drawable/ic_menu_find" android:id="@+id/nav_findfriends" android:title="Find friends" />
+        <item android:icon="@drawable/ic_menu_share" android:id="@+id/nav_share_me" android:title="Sharing Options" />
+        <item android:icon="@drawable/setting_image" android:id="@+id/nav_settings" android:title="Settings" />
+        <item android:icon="@drawable/fingerprint" android:id="@+id/nav_help" android:visible="false" android:title="Help" />
+        <item android:icon="@drawable/fingerprint" android:id="@+id/nav_finger_login" android:visible="true" android:title="Fingerprint login: Off" />
+        <item android:icon="@mipmap/ic_signout" android:id="@+id/nav_logout" android:title="Logout" />
+
+    </group>
+</menu>

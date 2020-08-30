@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirimageviewprofile"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/profile_img" />
+
+    <TextView
+        android:id="@+id/tv_names"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/cirimageviewprofile"
+        android:text="gupta cdxf sdf sf ssf sdf"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_birthdays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/cirimageviewprofile"
+        android:text="Birthday"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/laymsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cirimageviewprofile"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Message"
+            android:textSize="13sp"
+
+            />
+
+        <EditText
+            android:id="@+id/tv_message"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_birthdays"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/tvmsg"
+            android:backgroundTint="@color/white"
+            android:editable="true"
+            android:gravity="left|top"
+            android:text="ajsdsgkj sfsdf sdf sdfg dsg sdfg sgsgsdgsdf"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/laygif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laymsg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txgif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Gif"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/imgGif1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/laydate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/laygif"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tcsch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvmsg"
+            android:layout_marginLeft="5dp"
+            android:text="Scheduled At"
+            android:textSize="12sp"
+
+            />
+
+        <EditText
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_toRightOf="@+id/tcsch"
+            android:backgroundTint="@color/white"
+            android:editable="true"
+            android:text="20-jun "
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_date"
+            android:backgroundTint="@color/white"
+            android:editable="true"
+            android:text="20-jun "
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laydate"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/sch_deletebtn"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="10dp"
+            android:text="Delete"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/sch_updateebtn"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/laydate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/sch_deletebtn"
+            android:text="update"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

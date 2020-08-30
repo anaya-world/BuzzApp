@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout tools:context=".Activities.CommentPostActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/textlayout">
+        <LinearLayout android:orientation="vertical" android:id="@+id/parentlayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp">
+            <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivprofileimage" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="10dp" android:src="@drawable/profile_img"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tvfriendname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prashant sharma"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="10sp" android:textColor="@android:color/black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brussels"/>
+                        <TextView android:textSize="10sp" android:textColor="@android:color/black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=", Belgium"/>
+                    </LinearLayout>
+                    <TextView android:textSize="8sp" android:textColor="@android:color/black" android:id="@+id/tvstatustime" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="12min"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/likes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000"/>
+                <TextView android:textSize="12sp" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="likes"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView" android:background="#fff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:layout_below="@+id/parentlayout"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/textlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_alignParentBottom="true">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/iv_profilepic" android:background="?attr/selectableItemBackground" android:padding="3dp" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:src="@drawable/profile_img" android:layout_centerVertical="true" android:contentDescription="Upload file"/>
+        <EditText android:id="@+id/edittext_comment" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:hint="Add a Comment..." android:maxLines="6" android:layout_toLeftOf="@+id/button_group_comment" android:layout_toRightOf="@+id/iv_profilepic" android:layout_centerVertical="true"/>
+        <ImageView android:textSize="14dp" android:id="@+id/button_group_comment" android:clickable="true" android:layout_width="35dp" android:layout_height="30dp" android:layout_marginRight="2dp" app:srcCompat="@drawable/ic_send_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

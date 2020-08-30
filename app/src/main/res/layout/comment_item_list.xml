@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivprofileimagesssssds"
+            android:layout_gravity="center"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/profile_img"/>
+        <LinearLayout android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vivek Singh"
+                />
+            <TextView android:textSize="10sp"
+                android:layout_toRightOf="@+id/tv_username"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tvcommenttime" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="12min"/>
+</RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:textSize="14sp"
+
+                    android:textColor="@android:color/black" android:id="@+id/tv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brusselsughgfgfhgfgfgghffghgfgfhfgfgfghfgfggfgfgfghfghfghfghfghfgfgfgfgfgfgfgfgfgggfgfggfgfhgfhgfggfgfgfgggfgfgfgfgfggfgffg"/>
+            </LinearLayout>
+               </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

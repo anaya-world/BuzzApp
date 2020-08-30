@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.AdvanceSearchFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_search"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/ic_work_for"
+                android:backgroundTint="@color/black"/>
+            <EditText android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/et_company_name"
+                android:background="@null"
+                android:textColorHint="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Organisation "
+                android:singleLine="true"
+                android:maxLength="36"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_gravity="center" android:background="@color/app_color_pink" android:layout_width="wrap_content" android:layout_height="1dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@mipmap/ic_interest"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="2dp"
+                />
+            <TextView android:visibility="gone"
+                android:textColor="@color/tab_black"
+                android:id="@+id/et_interests"
+                android:background="@null"
+                android:textSize="16sp"
+                android:textColorHint="@color/black"
+                android:inputType="textCapSentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.5dp"
+                android:hint="Interest"
+                android:singleLine="true"/>
+
+            <Spinner
+                android:id="@+id/spinner_interest_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+
+
+                android:layout_marginRight="@dimen/_33sdp"
+                />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View android:layout_gravity="center" android:background="@color/app_color_pink" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/ic_residence"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView android:visibility="visible"
+                    android:textColor="@color/tab_black"
+                    android:id="@+id/et_country"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Resident"
+                    android:singleLine="true"/>
+              <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/spinner_country"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/grey_transparent_50"
+                    android:layout_marginRight="@dimen/_51sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/ic_drop_down"
+
+                   >
+
+                </ImageView>
+
+                </RelativeLayout>-->
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <View android:layout_gravity="center" android:background="@color/app_color_pink" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+
+        <Button android:textColor="@color/color_white"
+            android:id="@+id/search"
+            android:layout_gravity="center"
+            android:background="@drawable/search_button_shape"
+            android:layout_width="120dp"
+            android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:text="Search"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_advance_search" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/linear_layout_search"/>
+    </LinearLayout>
+</FrameLayout>

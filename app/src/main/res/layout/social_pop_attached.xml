@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/poplinear" android:background="@color/tab_col" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="end" android:id="@+id/cancel_img" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_cancel_black_24dp"/>
+    <LinearLayout android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_image" android:layout_width="60dp" android:layout_height="60dp" app:srcCompat="@drawable/camera"/>
+            <TextView android:textColor="@color/tab_black" android:gravity="center_horizontal" android:id="@+id/tv_camera" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="image"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_gallery" android:layout_width="60dp" android:layout_height="60dp" app:srcCompat="@drawable/gallery"/>
+            <TextView android:textColor="@color/tab_black" android:layout_gravity="center_horizontal" android:id="@+id/tv_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gallery"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

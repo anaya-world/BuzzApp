@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center_horizontal"
+    android:id="@+id/layout_photo_viewer"
+    android:background="@android:color/white"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/main_image_view"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_7sdp"
+        android:background="@drawable/ic_rotate_right_black_24dp"
+        android:id="@+id/rotate"
+
+        android:layout_alignParentRight="true" />
+    <androidx.core.widget.ContentLoadingProgressBar android:layout_centerInParent="true" android:id="@+id/progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge"/>
+</RelativeLayout>

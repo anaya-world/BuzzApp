@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="40dp">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/playbutton" android:layout_width="25dp" android:layout_height="25dp" app:srcCompat="@drawable/play_arrow_black" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/pausebutton" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" app:srcCompat="@drawable/pause_black" android:layout_centerVertical="true"/>
+        <SeekBar android:id="@+id/seekBar" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/playbutton" android:layout_centerVertical="true"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="8sp" android:id="@+id/playtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="time" android:layout_toRightOf="@+id/seekBar" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

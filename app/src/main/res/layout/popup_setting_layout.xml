@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/popup_shape" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="Edit Profile Image"/>
+            <ImageView android:id="@+id/pop_up_close" android:background="@drawable/close_popup" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="10dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/choose_image_iv" android:background="@drawable/camera_popup" android:layout_width="70dp" android:layout_height="70dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_gallery_choose" android:background="@drawable/gallery_popup" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginLeft="30dp"/>
+            <ImageView android:visibility="gone" android:layout_gravity="center"  android:backgroundTint="@color/white" android:id="@+id/delete_profile_image" android:background="@drawable/delete_group" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="30dp" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

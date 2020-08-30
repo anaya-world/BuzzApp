@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listitem_layout"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    android:background="@color/color_white"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp">
+
+    <View
+        android:id="@+id/vertical_line11"
+        android:layout_width="3dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/tv_date"
+        android:layout_marginLeft="13dp"
+        android:background="#bfbebe" />
+
+    <View
+        android:id="@+id/vertical_line22"
+        android:layout_width="3dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/tv_date"
+        android:layout_marginLeft="34dp"
+        android:background="#bfbebe" />
+
+    <RelativeLayout
+        android:id="@+id/tv_date"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/eventborder">
+
+        <RelativeLayout
+            android:id="@+id/tv_month"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/red">
+
+            <View
+                android:id="@+id/vertical_line1"
+                android:layout_width="3dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="11dp"
+                android:background="#bfbebe" />
+
+            <View
+                android:id="@+id/vertical_line2"
+                android:layout_width="3dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="32dp"
+                android:background="#bfbebe" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:text="MAR"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/tv_month">
+
+            <TextView
+                android:id="@+id/tv_date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="21"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/tv_date"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:text="Lohri"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Indian Festival"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_unfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/send_message"
+        android:text="GIF"
+        android:padding="10dp"
+        android:textColor="@color/color_chat_tabs"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/send_message"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/message_friend_purple" />
+    <!--    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_timezone" android:background="@drawable/timezone_icon" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>-->
+</RelativeLayout>

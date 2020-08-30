@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@mipmap/ic_search" android:id="@+id/action_searchs" android:visible="true" android:title="" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="never|always|collapseActionView"/>
+    <item android:icon="@drawable/call_white" android:id="@+id/start_audio_call" android:title="@string/action_start_video_call" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_more_vert_black_24dp" android:id="@+id/start_moreoption" android:visible="false" android:title="@string/action_start_video_call" app:showAsAction="always"/>
+</menu>

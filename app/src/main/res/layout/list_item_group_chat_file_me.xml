@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+
+    <TextView
+        android:id="@+id/text_group_chat_date"
+        android:text="February 22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/groupChatDateText"
+        android:background="@drawable/group_chat_date_background"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_group_chat_file_message"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/group_channel_list_unread_background"
+        android:layout_below="@id/text_group_chat_date"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imgAud"
+            app:srcCompat="@drawable/ic_file_message" />
+
+        <TextView
+            android:id="@+id/text_group_chat_file_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@+id/imgAud"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="File Name.xls" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text_group_chat_file_name"
+            android:layout_marginStart="4dp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="#d8d8d8"
+            android:id="@+id/view1"/>
+
+        <Button
+            android:id="@+id/button_group_chat_file_download"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_file_message_download"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <ImageView android:layout_gravity="right" android:id="@+id/status_img" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="0dp" android:layout_marginTop="20dp" android:layout_marginRight="0dp" app:srcCompat="@drawable/yellowdot" android:layout_below="@+id/text_group_chat_date" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="10dp" android:padding="2dp" android:textColor="#8e8e8e" android:id="@+id/text_group_chat_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21:27" android:layout_below="@+id/status_img" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/text_group_chat_read_receipt"
+        android:textSize="10dp"
+        android:text="2"
+        android:textColor="@color/groupChatReadReceiptMe"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignRight="@id/text_group_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/circle_progress"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignRight="@id/text_group_chat_time"
+        android:visibility="gone"
+        app:draw_progress_text="false"
+        app:progress_stroke_width="3.5dp"
+        app:progress_start_color="#875eff"
+        app:progress_end_color="#875eff"
+        app:progress_background_color="#c1c1c1"
+        app:progress_stroke_cap="butt"/>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="25dp">
+            <ImageView android:layout_gravity="center" android:background="@mipmap/buzz_logo_240" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="35dp"/>
+            <TextView  android:gravity="center" android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Verify your Email ID"/>
+            <View android:background="#fe8080" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp" android:layout_below="@+id/llEmail" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:gravity="center" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp" android:text="To verify your Email ID, OTP (One Time Password) will be sent to your Email ID"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/relative_email" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="30dp" android:layout_marginRight="40dp">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/llEmail" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    <EditText android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:gravity="center"
+
+                        android:layout_gravity="center"
+                        android:id="@+id/et_email"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:hint="Display signed up Email ID"
+                        android:maxLines="1" android:ems="10"
+                        android:layout_toRightOf="@+id/tvEmail"/> </LinearLayout>
+                <View android:background="#fe8080" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_below="@+id/llEmail" android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="30dp" android:layout_marginRight="35dp">
+                <Button android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/btEditEmailId" android:background="@drawable/signin_shape" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:minHeight="30dp" android:text="Edit Email ID" android:layout_centerVertical="true" android:textAllCaps="false"/>
+                <Button android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/validate_button" android:background="@drawable/signin_shape" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:minHeight="30dp" android:text="Send OTP" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false"/>
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="By signing up, you are agreeing to BuzzApp&apos;s "/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_privacy_policy" android:textSize="12sp" android:textColor="@color/app_color_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Privacy Policy"/>
+                    <View android:background="@color/app_color_pink" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+                <TextView android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="and"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/app_color_pink" android:id="@+id/tv_terms_and_cond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_and_conditiions"/>
+                    <View android:background="@color/app_color_pink" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/varifyaccount_social" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

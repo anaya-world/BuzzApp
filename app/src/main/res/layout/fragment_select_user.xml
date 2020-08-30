@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SelectUserFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nolist"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No Friend Found. Go to Find Friends and add new friends.">
+
+        </TextView>
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_select_user"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</RelativeLayout>

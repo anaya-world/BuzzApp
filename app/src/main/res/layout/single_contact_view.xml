@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/contactlayout" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ivContactImage" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="10dp" app:srcCompat="@drawable/ic_person_black_24dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@android:color/primary_text_light" android:id="@+id/tvContactName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Name"/>
+            <TextView android:textSize="14sp" android:textColor="@android:color/primary_text_light" android:id="@+id/tvPhoneNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Phone"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

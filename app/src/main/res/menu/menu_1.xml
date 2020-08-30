@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/friend"
+        android:title="Friend Request" />
+    <item
+        android:id="@+id/follow"
+        android:title="Follow" />
+
+</menu>

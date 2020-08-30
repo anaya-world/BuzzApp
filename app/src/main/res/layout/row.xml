@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/row_icon"
+        android:padding="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="10dp"/>
+    <TextView android:gravity="center_vertical"
+        android:id="@+id/row_title" android:padding="10dp"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>

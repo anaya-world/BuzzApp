@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_chat_search"
+        android:title=""
+        android:icon="@drawable/search_white"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/iv_chat_call"
+        android:title=""
+        android:visible="false"
+        android:icon="@drawable/call_white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_mute_unmute"
+        android:title="@string/menu_mute" />
+
+    <item
+        android:id="@+id/menu_follow_unfollow"
+        android:title="@string/menu_follow" />
+
+    <item
+        android:id="@+id/menu_block"
+        android:title="@string/menu_block" />
+
+    <!-- REMOVE/UNFRIEND is now Block/Unblock.-->
+
+    <item
+        android:id="@+id/menu_remove_unfriend"
+        android:title="@string/menu_remove_unfriend"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menu_email_chat"
+        android:title="@string/menu_email_chat" />
+
+    <item
+        android:id="@+id/menu_delete_chat"
+        android:title="@string/menu_delete_chat" />
+
+    <item
+        android:id="@+id/menu_leave_group"
+        android:title="@string/menu_leave_group" />
+
+</menu>

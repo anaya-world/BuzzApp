@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout tools:context=".Adapter.EventuserlistAdapter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@+id/checkbox_selectable_user_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginRight="15dp" android:layout_weight="0">
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center_vertical" android:id="@+id/image_selectable_user_list_profile" android:background="@drawable/app_buzz_logo" android:layout_width="38dp" android:layout_height="38dp"/>
+        <ImageView android:id="@+id/image_user_list_blocked" android:background="@drawable/icon_block_38_dp" android:visibility="gone" android:layout_width="38dp" android:layout_height="38dp"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@+id/text_selectable_user_list_nickname" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_message" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/message_icon"/>
+</LinearLayout>

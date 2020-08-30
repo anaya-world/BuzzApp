@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:background="@color/color_white" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+tools:context=".Fragments.FriendRequestFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_friend_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nolist_friendlist_req"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Click on search icon to send a friend request"
+            ></TextView>
+    </LinearLayout>
+</FrameLayout>

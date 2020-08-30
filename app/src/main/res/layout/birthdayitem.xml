@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/listitem_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <View
+            android:id="@+id/vertical_line11"
+            android:layout_width="3dp"
+            android:layout_height="2dp"
+            android:layout_above="@+id/tv_dates"
+            android:layout_marginLeft="13dp"
+            android:background="#bfbebe" />
+
+        <View
+            android:id="@+id/vertical_line22"
+            android:layout_width="3dp"
+            android:layout_height="2dp"
+            android:layout_above="@+id/tv_dates"
+            android:layout_marginLeft="34dp"
+            android:background="#bfbebe" />
+
+        <RelativeLayout
+            android:id="@+id/tv_dates"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/eventborder">
+
+            <RelativeLayout
+                android:id="@+id/tv_month"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/red">
+
+                <View
+                    android:id="@+id/vertical_line1"
+                    android:layout_width="3dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="11dp"
+                    android:background="#bfbebe" />
+
+                <View
+                    android:id="@+id/vertical_line2"
+                    android:layout_width="3dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="#bfbebe" />
+
+                <TextView
+                    android:id="@+id/text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-2dp"
+                    android:text="MMM"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_month">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_bimg"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_dates"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo_pink" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/profile_bimg"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:text="Vivek Singh hfghghkgkkgkjg"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Birthday"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_unfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/send_friend_message"
+        android:text="GIF"
+        android:padding="10dp"
+        android:textColor="@color/color_chat_tabs"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/send_friend_message"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/call_friend"
+        android:background="@drawable/message_friend_purple" />
+
+    <ImageView
+        android:id="@+id/call_friend"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/iv_timezone"
+        android:background="@drawable/call_purpleicon" />
+
+    <ImageView
+        android:id="@+id/iv_timezone"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/timezone_icon" />
+</LinearLayout>
